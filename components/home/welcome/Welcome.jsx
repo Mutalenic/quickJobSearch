@@ -15,6 +15,7 @@ import styles from "./welcome.style";
 const Welcome = () => {
   const router = useRouter();
   const jobTypes = [ "Full-time", "Part-time", "Contractor" ];
+  const [activeJobType, setActiveJobType] = useState('Full-time');
   return (
     <View style= { styles.container }>
       <Text style= { styles.userName }>Nicholas</Text>
@@ -40,7 +41,7 @@ const Welcome = () => {
             />
           </TouchableOpacity>
       </View>
-      <View>
+      <View style={ styles.tabsContainer}>
         <FlatList
           data={ jobTypes }
           renderItem={ ({ item }) => (
@@ -49,6 +50,7 @@ const Welcome = () => {
                 { item }
               </Text>
             </TouchableOpacity>
+            
            )}
         />
       </View>

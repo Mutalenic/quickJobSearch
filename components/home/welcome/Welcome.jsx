@@ -16,7 +16,7 @@ const Welcome = () => {
   const router = useRouter();
   return (
     <View style= { styles.container }>
-      <Text style= { styles.userName }>Welcome</Text>
+      <Text style= { styles.userName }>Nicholas</Text>
       <Text style= { styles.welcomeMessage }>
         Find your dream job
       </Text>
@@ -24,7 +24,6 @@ const Welcome = () => {
         <View style= { styles.searchWrapper }></View>
         <TextInput
           style= { styles.searchInput }
-          placeholder= "Search for jobs"
         />
       </View>
     </View>

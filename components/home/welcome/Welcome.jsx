@@ -12,46 +12,40 @@ import { useRouter } from "expo-router";
 import { icons, SIZES } from "../../../constants";
 import styles from "./welcome.style";
 
+const jobTypes = ["Full-time", "Part-time", "Contractor"];
+
 const Welcome = () => {
   const router = useRouter();
-  const jobTypes = [ "Full-time", "Part-time", "Contractor" ];
-  const [activeJobType, setActiveJobType] = useState('Full-time');
+  const [activeJobType, setActiveJobType] = useState("Full-time");
   return (
-    <View style= { styles.container }>
-      <Text style= { styles.userName }>Nicholas</Text>
-      <Text style= { styles.welcomeMessage }>
-        Find your dream job
-      </Text>
-      <View style= { styles.searchContainer }>
-        <View style= { styles.searchWrapper }>
-        <TextInput
-          style= { styles.searchInput }
-          value=""
-          onChange={()=> {}}
-          placeholder="Search for jobs..."
-        />
+    <View style={styles.container}>
+      <Text style={styles.userName}>Nicholas</Text>
+      <Text style={styles.welcomeMessage}>Find your dream job</Text>
+      <View style={styles.searchContainer}>
+        <View style={styles.searchWrapper}>
+          <TextInput
+            style={styles.searchInput}
+            value=""
+            onChange={() => {}}
+            placeholder="Search for jobs..."
+          />
         </View>
-        <TouchableOpacity
-          style= { styles.searchBtn }
-          onPress={() => {}}>
-            <Image
-              style= { styles.searchBtnImage }
-              source={ icons.search }
-              resizeMode="contain"
-            />
-          </TouchableOpacity>
+        <TouchableOpacity style={styles.searchBtn} onPress={() => {}}>
+          <Image
+            style={styles.searchBtnImage}
+            source={icons.search}
+            resizeMode="contain"
+          />
+        </TouchableOpacity>
       </View>
-      <View style={ styles.tabsContainer}>
+      <View style={styles.tabsContainer}>
         <FlatList
-          data={ jobTypes }
-          renderItem={ ({ item }) => (
+          data={jobTypes}
+          renderItem={({ item }) => (
             <TouchableOpacity>
-              <Text>
-                { item }
-              </Text>
+              <Text>{item}</Text>
             </TouchableOpacity>
-            
-           )}
+          )}
         />
       </View>
     </View>

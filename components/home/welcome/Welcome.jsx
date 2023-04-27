@@ -40,9 +40,18 @@ const Welcome = () => {
             />
           </TouchableOpacity>
       </View>
-      <FlatList
-      data={ jobTypes}
-      ></FlatList>
+      <View>
+        <FlatList
+          data={ jobTypes }
+          renderItem={ ({ item }) => (
+            <TouchableOpacity>
+              <Text>
+                { item }
+              </Text>
+            </TouchableOpacity>
+           )}
+        />
+      </View>
     </View>
   );
 };

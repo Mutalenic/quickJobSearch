@@ -21,10 +21,23 @@ const Welcome = () => {
         Find your dream job
       </Text>
       <View style= { styles.searchContainer }>
-        <View style= { styles.searchWrapper }></View>
+        <View style= { styles.searchWrapper }>
         <TextInput
           style= { styles.searchInput }
+          value=""
+          onChange={()=> {}}
+          placeholder="Search for jobs..."
         />
+        </View>
+        <TouchableOpacity
+          style= { styles.searchBtn }
+          onPress={() => {}}>
+            <Image
+              style= { styles.searchBtnImage }
+              source={ icons.search }
+              resizeMode="contain"
+            />
+          </TouchableOpacity>
       </View>
     </View>
   );

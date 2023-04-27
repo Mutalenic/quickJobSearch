@@ -14,6 +14,7 @@ import styles from "./welcome.style";
 
 const Welcome = () => {
   const router = useRouter();
+  const jobTypes = [ "Full-time", "Part-time", "Contractor" ];
   return (
     <View style= { styles.container }>
       <Text style= { styles.userName }>Nicholas</Text>
@@ -39,6 +40,7 @@ const Welcome = () => {
             />
           </TouchableOpacity>
       </View>
+      <FlatList></FlatList>
     </View>
   );
 };

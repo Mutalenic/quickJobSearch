@@ -12,6 +12,10 @@ const Home = () => {
             options= {{
                 headerStyle:{ backgroundColor:COLORS.lightWhite },
                 headerShadowVisible:false,
+                headerLeft: () => (
+                    <ScreenHeaderBtn iconUrl={ icons.menu } dimension= "60%"/> 
+                    ),
+                    
             }}
             />
         </SafeAreaView>

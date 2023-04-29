@@ -23,7 +23,7 @@ const router = useRouter();
           <Text style={ styles.headerBtn}>Show all</Text>
           </TouchableOpacity>
       </View>
-      <View style={styles.content}>
+      <View style={styles.cardContainer}>
         <FlatList
           data={Popularjobs}
           renderItem={({ item }) => <PopularJobCard job={item} />}

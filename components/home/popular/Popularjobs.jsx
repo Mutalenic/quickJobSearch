@@ -36,6 +36,9 @@ const isLoading = false;
           renderItem={({ item }) => <PopularJobCard item={item} />}
         />
 )}
+keyExtractor = {item => item?.job_id}
+contentContainerStyle = {{columnGap: SIZES.medium}}
+horizontal
       </View>
     </View>
   );

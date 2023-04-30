@@ -15,6 +15,7 @@ import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 
 const Popularjobs = () => {
 const router = useRouter();
+const error = false;
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -24,6 +25,11 @@ const router = useRouter();
           </TouchableOpacity>
       </View>
       <View style={styles.cardContainer}>
+        { isLoading? (
+          <ActivityIndicator SIZES="Large" colors= { COLORS.primary} />
+        ): error? (
+          <Text style={styles.errorText}>Someting went wrong</Text>
+        ): (
         <FlatList
           data={Popularjobs}
           renderItem={({ item }) => <PopularJobCard job={item} />}

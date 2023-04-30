@@ -16,6 +16,7 @@ import PopularJobCard from "../../common/cards/popular/PopularJobCard";
 const Popularjobs = () => {
 const router = useRouter();
 const error = false;
+const isLoading = false;
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -31,9 +32,10 @@ const error = false;
           <Text style={styles.errorText}>Someting went wrong</Text>
         ): (
         <FlatList
-          data={Popularjobs}
-          renderItem={({ item }) => <PopularJobCard job={item} />}
+          data={[1,2,3,4]}
+          renderItem={({ item }) => <PopularJobCard item={item} />}
         />
+)}
       </View>
     </View>
   );

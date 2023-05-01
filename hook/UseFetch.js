@@ -51,6 +51,7 @@ const fetchData = async ()=>{
     setIsLoading(true);
     fetchData();
   }
+  return{ data, isLoading, error, refetch };
 }
 
 

@@ -25,7 +25,7 @@ const Popularjobs = () => {
           <Text style={styles.headerBtn}>Show all</Text>
         </TouchableOpacity>
       </View>
-      <View style={styles.cardContainer}>
+      <View style={styles.cardsContainer}>
         {isLoading ? (
           <ActivityIndicator SIZES="Large" colors={COLORS.primary} />
         ) : error ? (

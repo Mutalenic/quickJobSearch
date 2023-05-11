@@ -2,7 +2,14 @@ import { Stack, useRouter, useSearchParams } from "expo-router";
 import {SafeAreaView, Text} from "react-native";
 import useFetch from '../../hook/UseFetch';
 import { COLORS, icons, SIZES } from "../../constants";
-
+import {
+    Company,
+    JobAbout,
+    JobFooter,
+    JobTabs,
+    ScreenHeaderBtn,
+    Specifics,
+  } from "../../components";
 
 const  JobDetails = ()=> {
     const params = useSearchParams();
@@ -17,6 +24,8 @@ const  JobDetails = ()=> {
                 headerStyle: {backgroundColor: COLORS.lightWhite},
                 headerShadowVisible: false,
                 headerBackVisible: false,
+                headerLeft : () =>( <ScreenHeaderBtn iconUrl={icons.left} dimensions = "60%"handlePress={() => router.back()}/>),
+                headerTitle:''
 
             }}/>
 

@@ -16,7 +16,8 @@ const  JobDetails = ()=> {
             options={{
                 headerStyle: {backgroundColor: COLORS.lightWhite},
                 headerShadowVisible: false,
-                
+                headerBackVisible: false,
+
             }}/>
 
         </SafeAreaView>

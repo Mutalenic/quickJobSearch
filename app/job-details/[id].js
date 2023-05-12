@@ -20,25 +20,27 @@ const  JobDetails = ()=> {
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: COLORS.lightWhite }}>
         <Stack.Screen
-          options={{
-            headerStyle: { backgroundColor: COLORS.lightWhite },
-            headerShadowVisible: false,
-            headerBackVisible: false,
-            headerLeft: () => (
-              <ScreenHeaderBtn
-                iconUrl={icons.left}
-                dimension='60%'
-                handlePress={() => router.back()}
-              />
-            ),
-            headerRight: () => (
-              <ScreenHeaderBtn iconUrl={icons.share} dimension='60%' />
-            ),
-            headerTitle: ""
-          }}
-        />
-
-        </SafeAreaView>
+  options={{
+    headerStyle: { backgroundColor: COLORS.lightWhite },
+    headerShadowVisible: false,
+    headerBackVisible: false,
+    headerLeft: () => (
+      <ScreenHeaderBtn
+        iconUrl={icons.left}
+        dimension='60%'
+        handlePress={() => router.back()}
+      >
+        {/* Empty string as children prop */}
+        ""
+      </ScreenHeaderBtn>
+    ),
+    headerRight: () => (
+      <ScreenHeaderBtn iconUrl={icons.share} dimension='60%' />
+    ),
+    headerTitle: ""
+  }}
+/>
+</SafeAreaView>
     )
 }
 

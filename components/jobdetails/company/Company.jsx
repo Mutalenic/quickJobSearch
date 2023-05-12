@@ -17,6 +17,7 @@ const Company = ({companyLogo, jobTitle, companyName, location}) => {
         style={styles.logoImage}
         />
       </View>
+      <View ><Text>{jobTitle}</Text></View>
     </View>
   )
 }

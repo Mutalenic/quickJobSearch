@@ -1,5 +1,5 @@
 import { Stack, useRouter, useSearchParams } from "expo-router";
-import {SafeAreaView, Text} from "react-native";
+import {SafeAreaView, ScrollView, Text} from "react-native";
 import useFetch from '../../hook/UseFetch';
 import { COLORS, icons, SIZES } from "../../constants";
 import {
@@ -55,7 +55,7 @@ const  JobDetails = ()=> {
           ) : (
             <View style={{ padding: SIZES.medium, paddingBottom: 100 }}>
               </View>)}
-        </ScrollView>
+        </Scro>
 
         </SafeAreaView>
     )

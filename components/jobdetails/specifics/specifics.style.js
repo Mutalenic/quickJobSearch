@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { COLORS, FONT, SIZES } from "../../../constants";
+import { COLORS, SIZES } from "../../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
   title: {
     fontSize: SIZES.large,
     color: COLORS.primary,
-    fontFamily: FONT.bold,
+    fontFamily: 'Roboto',
+    fontWeight: '500',
   },
   pointsContainer: {
     marginVertical: SIZES.small,
@@ -33,7 +34,7 @@ const styles = StyleSheet.create({
   pointText: {
     fontSize: SIZES.medium - 2,
     color: COLORS.gray,
-    fontFamily: FONT.regular,
+    fontFamily: 'sans-serif',
     marginLeft: SIZES.small,
   },
 });

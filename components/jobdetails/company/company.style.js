@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { COLORS, FONT, SIZES } from "../../../constants";
+import { COLORS, SIZES } from "../../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
   jobTitle: {
     fontSize: SIZES.large,
     color: COLORS.primary,
-    fontFamily: FONT.bold,
+    fontFamily: 'Roboto',
     textAlign: "center",
   },
   companyInfoBox: {
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
   companyName: {
     fontSize: SIZES.medium - 2,
     color: COLORS.primary,
-    fontFamily: FONT.medium,
+    fontFamily: 'sans-serif',
   },
   locationBox: {
     flexDirection: "row",
@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
   locationName: {
     fontSize: SIZES.medium - 2,
     color: COLORS.gray,
-    fontFamily: FONT.regular,
+    fontFamily: 'sans-serif',
     marginLeft: 2,
   },
 });

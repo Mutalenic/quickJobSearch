@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-import { COLORS, FONT, SIZES } from "../../../constants";
+import { COLORS, SIZES } from "../../../constants";
 
 const styles = StyleSheet.create({
   container: {
@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
   headText: {
     fontSize: SIZES.large,
     color: COLORS.primary,
-    fontFamily: FONT.bold,
+    fontFamily: 'Roboto',
+    fontWeight: '500',
   },
   contentBox: {
     marginVertical: SIZES.small,
@@ -20,7 +21,7 @@ const styles = StyleSheet.create({
   contextText: {
     fontSize: SIZES.medium - 2,
     color: COLORS.gray,
-    fontFamily: FONT.regular,
+    fontFamily: 'sans-serif',
     marginVertical: SIZES.small / 1.25,
   },
 });
